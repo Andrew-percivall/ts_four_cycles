@@ -12,9 +12,28 @@
 //   console.log(`count : ${count}`)
 // }
 // # 2
-var dollar = 41;
-console.log("one dollar : ".concat(dollar, " UAH"));
-for (var x = 10; x <= 100; x += 10) {
-    var dollars = dollar * x;
-    console.log("".concat(x, " $ dollars = ").concat(dollars, " UAH"));
+// let dollar: number = 41
+// console.log(`one dollar : ${dollar} UAH`);
+// for(let x = 10; x <= 100; x+=10) {
+//   let dollars = dollar * x
+//   console.log(`${x} $ dollars = ${dollars} UAH`);
+// }
+// # 3
+var num = Number(prompt('введіть квадрат чисел не більше 100: '));
+if (isNaN(num) || num <= 0) {
+    alert("\u0432\u0438 \u0432\u0456\u0434\u043C\u0456\u043D\u0438\u043B\u0438 \u0430\u0431\u043E \u0432\u0432\u0435\u043B\u0438 \u043F\u0443\u0441\u0442\u0435 \u043F\u043E\u043B\u0435");
+}
+if (num <= 100) {
+    for (var sqrtNumber = 1; sqrtNumber <= num; sqrtNumber++) {
+        if (Math.pow(sqrtNumber, 2) <= num) {
+            console.log("\u0447\u0438\u0441\u043B\u043E : ".concat(sqrtNumber));
+        }
+        else {
+            break;
+        }
+    }
+    num && alert('результат дивимося у консолі.');
+}
+else {
+    alert("\u0432\u0438 \u0432\u0432\u0435\u043B\u0438 \u0447\u0438\u0441\u043B\u043E : ".concat(num, " \u0430 \u0446\u0435 \u0447\u0438\u0441\u043B\u043E \u0431\u0456\u043B\u044C\u0448\u0435 100"));
 }

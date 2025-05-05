@@ -22,10 +22,37 @@
 
 
 // # 2
-let dollar: number = 41
-console.log(`one dollar : ${dollar} UAH`);
+// let dollar: number = 41
+// console.log(`one dollar : ${dollar} UAH`);
 
-for(let x = 10; x <= 100; x+=10) {
-  let dollars = dollar * x
-  console.log(`${x} $ dollars = ${dollars} UAH`);
+// for(let x = 10; x <= 100; x+=10) {
+//   let dollars = dollar * x
+//   console.log(`${x} $ dollars = ${dollars} UAH`);
+// }
+
+
+// # 3
+const num = Number(prompt('введіть квадрат чисел не більше 100: '))
+
+if (isNaN(num) || num <= 0) {
+  alert(`ви відмінили або ввели пусте поле`)
 }
+
+if (num <= 100) {
+  for(let sqrtNumber = 1; sqrtNumber <= num; sqrtNumber++) {
+    if (sqrtNumber ** 2 <= num){
+      console.log(`число : ${sqrtNumber}`);
+    } else {
+      break;
+    }
+  }
+
+  num && alert('результат дивимося у консолі.');
+
+} else {
+  alert(`ви ввели число : ${num} а це число більше 100`);
+}
+
+
+
+
