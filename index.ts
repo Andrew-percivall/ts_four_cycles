@@ -15,10 +15,17 @@
 
 
 // # 1
-let count: number = 20;
-for(count; count <= 30; count+=0.5){
-  console.log(`count : ${count}`)
-}
+// let count: number = 20;
+// for(count; count <= 30; count+=0.5){
+//   console.log(`count : ${count}`)
+// }
 
 
 // # 2
+let dollar: number = 41
+console.log(`one dollar : ${dollar} UAH`);
+
+for(let x = 10; x <= 100; x+=10) {
+  let dollars = dollar * x
+  console.log(`${x} $ dollars = ${dollars} UAH`);
+}

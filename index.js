@@ -7,7 +7,14 @@
 //5 Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 3 у деякий ступінь. 
 // (Наприклад, числа 9, 81 можна отримати, а 13 - не можна).
 // # 1
-var count = 20;
-for (count; count <= 30; count += 0.5) {
-    console.log("count : ".concat(count));
+// let count: number = 20;
+// for(count; count <= 30; count+=0.5){
+//   console.log(`count : ${count}`)
+// }
+// # 2
+var dollar = 41;
+console.log("one dollar : ".concat(dollar, " UAH"));
+for (var x = 10; x <= 100; x += 10) {
+    var dollars = dollar * x;
+    console.log("".concat(x, " $ dollars = ").concat(dollars, " UAH"));
 }
